@@ -1,0 +1,29 @@
+<html>
+<head>
+<SCRIPT>
+
+let PI = 3.14159;
+function CalcCircumference() {
+     let r=document.getElementById("radius").value;
+	document.getElementById("circum").value =2*PI*r;
+	 CalcArea();
+}
+function CalcArea() {
+     let r=document.getElementById("radius").value;
+	 document.getElementById("area").value=PI*r*r;
+}
+</SCRIPT></head><body>
+<FORM name="calc">
+<table >
+<tr>
+<td> Radius </td>
+<td><INPUT type="text" size="10" id="radius"></td></tr>
+<tr><td> Circumference </td><td><INPUT type="text" size="10" id="circum"></td>
+</tr>
+  <tr><td>Area</td><td><INPUT type="text" size="10" id="area"></td></tr>
+  <tr><td colspan="2">
+  <INPUT type="button" value="Calculate!" onclick= 
+    "CalcCircumference()"></td></tr>
+</FORM>
+</body>
+</html>
